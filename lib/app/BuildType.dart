@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 
 enum BuildType { release, debug, profile }
 
-extension BuildTypeExtension on BuildType {
-  BuildType type() {
+class BuildTypeHelper {
+  static BuildType type() {
     if (kDebugMode) {
       return BuildType.debug;
     }
@@ -15,4 +15,8 @@ extension BuildTypeExtension on BuildType {
     }
     return BuildType.debug;
   }
+}
+
+extension BuildTypeExtension on BuildType{
+
 }
