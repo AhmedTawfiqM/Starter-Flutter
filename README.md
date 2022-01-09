@@ -24,7 +24,7 @@
 - AppStartUpFlow
 - AppNavigator
 
-![Alt text](arch2.png)
+![Alt text](arch.png)
 
 # Installation
 
