@@ -24,7 +24,7 @@
 - AppStartUpFlow
 - AppNavigator
 
-![Alt text](union.png)
+![Alt text](arch2.png)
 
 # Installation
 
@@ -35,7 +35,7 @@
 
 # why Modular Architecture ?
 
-![Alt text](modules.PNG)
+![Alt text](arch2.png)
 
 - The Project is Clean , Testable , Maintainable and changable
 - High quality App with high cohesion and low coupling
