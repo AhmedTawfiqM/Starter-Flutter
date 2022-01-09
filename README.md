@@ -1,7 +1,7 @@
-# Modular-Architecture
+# Modular-Architecture Codebase
 
 
-## Modular Arhitecture Codebase
+## CodeBase , Infrastructure and the common Layers (core-data-presentation)
 
 ### clone the project and build your project to be Clean , Testable , Maintainable and changable
 
@@ -48,6 +48,6 @@
 check my last lecture about Clean architecture and Clean Code [Lecture](https://www.youtube.com/watch?v=kFll5whDTJc&t=759s&ab_channel=AHMEDTAWFIQ)
 
 ## Usage
-check the sample [News App](https://github.com/AhmedTawfiqM/News-App-Modular-)
+check the sample in the same project [Starter Flutter]https://github.com/AhmedTawfiqM/Starter-Flutter)
 
 
