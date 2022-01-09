@@ -4,7 +4,11 @@ import 'package:provider/provider.dart';
 import 'package:starterflutter/app/AppStartUpFlow.dart';
 import 'package:starterflutter/app/di/AppInjector.dart';
 
+import 'app/app.dart';
+
 void main() {
+  App().setup();
+
   runApp(MyApp());
 }
 
