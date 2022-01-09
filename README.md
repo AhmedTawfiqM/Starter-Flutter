@@ -11,6 +11,8 @@
 
 > Integration Details
 - Union Architecture (Clean Architecture)
+- Bloc Pattern
+- Providers
 - Cashing Integration
 - Dependency Injection
 - DataSrc Options (Local - Remote)
