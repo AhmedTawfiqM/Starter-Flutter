@@ -1,7 +1,7 @@
 # Modular-Architecture
 
 
-## Modular Arhitecture ProType
+## Modular Arhitecture Codebase
 
 ### clone the project and build your project to be Clean , Testable , Maintainable and changable
 
@@ -13,25 +13,22 @@
 - Union Architecture (Clean Architecture)
 - Cashing Integration
 - Dependency Injection
-- Build Variant
-- buildSrc  (Gradle Managment)
-
-- AppRequester for asyncronous tasks
-- BaseActivity 
-- BaseFragment
-- BaseViewModel
-
-- Retrofit Builder
-- Interceptor Network
+- DataSrc Options (Local - Remote)
+- Dio Network with BaseOptions
+- Interceptor Network  
 - SharedPref Abstraction
+- DebugNavigation
+- BuildType
+- AppStartUpFlow
+- AppNavigator
 
-![Alt text](union.PNG)
+![Alt text](union.png)
 
 # Installation
 
 1. clone the project in android studio
 2. change applicationID (packageName ) as you like
-3. change the project name from setting.gradle like this rootProject.name = "Modular"
+3. change the project name from main like this title = "Starter Flutter"
 4. may need to sync , clean then rebuild the project.
 
 # why Modular Architecture ?
