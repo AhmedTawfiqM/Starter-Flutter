@@ -1,19 +1,21 @@
-class ResourceState {}
+abstract class ResourceState {}
 
-class ResourceInitState extends ResourceState {}
+class InitResource extends ResourceState {}
 
-class ResourceLoadingState extends ResourceState {}
+class LoadingResource extends ResourceState {}
 
-class ResourceSucceedState extends ResourceState {
-  final String uId;
+class ResultResource<T> extends ResourceState {
+  late T result;
 
-  ResourceSucceedState(this.uId);
+  ResultResource(this.result);
 }
 
-class ResourceErrorState extends ResourceState {
-  final String error;
+class ErrorResource extends ResourceState {
+  String error;
 
-  ResourceErrorState(this.error);
+  ErrorResource(this.error);
 }
 
-class ResourceVisibilityState extends ResourceState {}
+class SuccessResource extends ResourceState {}
+
+class FailedResource extends ResourceState {}
