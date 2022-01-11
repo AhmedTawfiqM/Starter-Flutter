@@ -32,8 +32,4 @@ abstract class AppScreenWidget<T extends StatefulWidget, BLOC extends Cubit>
     if (state is ErrorResource) {}
   }
 
-  @override
-  Widget build(BuildContext context) {
-    throw UnimplementedError();
-  }
 }
