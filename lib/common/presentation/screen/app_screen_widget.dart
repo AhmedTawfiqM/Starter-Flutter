@@ -9,7 +9,7 @@ abstract class AppScreenWidget<T extends StatefulWidget, BLOC extends Cubit>
   late BLOC cubit;
   final _appNavigator = AppNavigator();
 
-  onInitState() {} //TODO: make abstract
+  onInitState();
 
   @override
   void initState() {
