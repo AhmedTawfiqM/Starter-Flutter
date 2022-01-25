@@ -6,12 +6,12 @@ import 'DebugNavigation.dart';
 
 class AppStartUpFlow {
   static Widget mainScreen() {
-    switch (BuildTypeHelper.type()) {
+    switch (buildType()) {
       case BuildType.release:
       case BuildType.profile:
         return const HomeScreen();
       case BuildType.debug:
-        return DebugNavigation.screen();
+        return DebugNavigation().screen();
     }
   }
 }

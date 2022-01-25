@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:starterflutter/screens/home/HomeScreen.dart';
 
 class DebugNavigation {
-  static Widget screen() {
-    return const HomeScreen();
+  late var _homeScreen = HomeScreen();
+
+  Widget screen() {
+    return _homeScreen;
   }
 }

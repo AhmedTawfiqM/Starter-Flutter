@@ -1,6 +1,11 @@
+import 'package:flutter/cupertino.dart';
+
+import 'di/AppInjector.dart';
+
 class App{
   setup(){
     //TODO: do stuff here
-    //setup firebase or create your local database
+    WidgetsFlutterBinding.ensureInitialized();
+    AppInjector().inject();
   }
 }
