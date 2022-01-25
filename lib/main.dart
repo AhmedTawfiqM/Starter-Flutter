@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -5,31 +7,35 @@ import 'package:starterflutter/app/AppStartUpFlow.dart';
 import 'package:starterflutter/app/di/AppInjector.dart';
 
 import 'app/app.dart';
+import 'common/presentation/error_handler.dart';
 
 void main() {
   App().setup();
 
-  runApp(MyApp());
+  runZonedGuarded(() {
+    runApp(const MyApp());
+  }, (Object error, StackTrace stack) {
+    getIt.get<AppErrorHandler>().onStackError(stack);
+  });
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
-  final _appInjector = AppInjector();
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: _appInjector.blocs(),
-      child: MultiProvider(
-        providers: _appInjector.providers(),
-        child: MaterialApp(
-          title: 'Starter Flutter',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: AppStartUpFlow.mainScreen(),
+      providers: AppInjector().blocs(),
+      child: MaterialApp(
+        title: 'Starter Flutter',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
         ),
+        home: AppStartUpFlow.mainScreen(),
       ),
     );
   }
+  ///if you want Bloc with Provider , replace MaterialApp with MultiProvider
+  // child: MultiProvider(
+  //         providers: AppInjector().providers(),
 }
