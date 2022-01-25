@@ -11,7 +11,7 @@ class AppStartUpFlow {
       case BuildType.profile:
         return const HomeScreen();
       case BuildType.debug:
-        return DebugNavigation.screen();
+        return DebugNavigation().screen();
     }
   }
 }

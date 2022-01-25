@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 import 'package:starterflutter/app/AppStartUpFlow.dart';
 import 'package:starterflutter/app/di/AppInjector.dart';
 
