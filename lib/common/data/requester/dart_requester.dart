@@ -1,9 +1,8 @@
+import 'package:starterflutter/common/data/requester/request_handler.dart';
 
 /*
   * Created by Ahmed Tawfik on 13/1/2022
  */
-
-import 'package:starterflutter/common/data/requester/request_handler.dart';
 
 class RequestOptions {
   bool showLoading;
